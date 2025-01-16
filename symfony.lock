@@ -47,18 +47,6 @@
             "ref": "1ff300d8c030f55c99219cc55050b97a695af3f6"
         }
     },
-    "php-cs-fixer/shim": {
-        "version": "3.68",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "main",
-            "version": "3.0",
-            "ref": "16422bf8eac6c3be42afe07d37e2abc89d2bdf6b"
-        },
-        "files": [
-            ".php-cs-fixer.dist.php"
-        ]
-    },
     "phpunit/phpunit": {
         "version": "9.6",
         "recipe": {
