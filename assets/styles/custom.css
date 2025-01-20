@@ -1,0 +1,46 @@
+figure[class="table"] {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 0.5rem; /* Arrondi des coins */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Supprimer les espaces entre les cellules */
+    border: 1px solid #e5e7eb; /* Couleur des bordures */
+    background-color: #ffffff; /* Fond blanc */
+}
+
+th {
+    text-align: left;
+    padding: 1rem; /* Espacement interne */
+    font-size: 0.875rem; /* Taille du texte */
+    font-weight: 700; /* Texte en gras */
+    background-color: #f3f4f6; /* Couleur de fond des en-têtes */
+    color: #374151; /* Couleur du texte */
+    border-bottom: 2px solid #e5e7eb; /* Ligne sous les en-têtes */
+}
+
+td {
+    padding: 1rem; /* Espacement interne */
+    font-size: 0.875rem; /* Taille du texte */
+    color: #4b5563; /* Couleur du texte */
+    border-bottom: 1px solid #e5e7eb; /* Ligne de séparation */
+}
+
+tr:nth-child(even) {
+    background-color: #f9fafb; /* Alternance de couleurs sur les lignes */
+}
+
+tr:hover {
+    background-color: #f3f4f6; /* Couleur au survol */
+}
+
+caption {
+    font-size: 1rem; /* Taille du texte */
+    font-weight: 600; /* Texte légèrement plus gras */
+    margin-bottom: 0.5rem; /* Espacement sous le titre */
+    color: #374151; /* Couleur du texte */
+    text-align: left;
+}

@@ -6,6 +6,7 @@ use App\Entity\Shop;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
 class ShopType extends AbstractType
 {
@@ -13,7 +14,10 @@ class ShopType extends AbstractType
     {
         $builder
             ->add('title')
-            ->add('description')
+            ->add('description', TextareaType::class, [
+                'attr' => ['class' => 'rich-editor'],
+                'required' => false,
+            ])
         ;
     }
 
