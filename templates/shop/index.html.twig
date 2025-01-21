@@ -12,6 +12,8 @@
                 <th>Title</th>
                 <th>Description</th>
                 <th>actions</th>
+                <th>Created At</th>
+                <th>Updated At</th>
             </tr>
         </thead>
         <tbody>
@@ -20,6 +22,9 @@
                 <td>{{ shop.id }}</td>
                 <td>{{ shop.title }}</td>
                 <td>{{ shop.description }}</td>
+                <td>{{ shop.createdAt ? shop.createdAt|date('Y-m-d') : '' }}</td>
+                <td>{{ shop.updatedAt ? shop.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+
                 <td>
                     <a href="{{ path('app_shop_show', {'id': shop.id}) }}">show</a>
                     <a href="{{ path('app_shop_edit', {'id': shop.id}) }}">edit</a>
